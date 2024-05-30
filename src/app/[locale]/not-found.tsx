@@ -1,53 +1,28 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
-// Note that `app/[locale]/[...rest]/page.tsx`
-// is necessary for this page to render.
 
 export default function NotFoundPage() {
   const t = useTranslations('NotFoundPage');
 
   return (
-    <section className='flex items-center sm:p-16 h-screen'>
-      <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 512 512'
-          className='w-40 h-40 dark:text-gray-400'
-        >
-          <path
-            fill='currentColor'
-            d='M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z'
-          ></path>
-          <rect
-            width='176'
-            height='32'
-            x='168'
-            y='320'
-            fill='currentColor'
-          ></rect>
-          <polygon
-            fill='currentColor'
-            points='210.63 228.042 186.588 206.671 207.958 182.63 184.042 161.37 162.671 185.412 138.63 164.042 117.37 187.958 141.412 209.329 120.042 233.37 143.958 254.63 165.329 230.588 189.37 251.958 210.63 228.042'
-          ></polygon>
-          <polygon
-            fill='currentColor'
-            points='383.958 182.63 360.042 161.37 338.671 185.412 314.63 164.042 293.37 187.958 317.412 209.329 296.042 233.37 319.958 254.63 341.329 230.588 365.37 251.958 386.63 228.042 362.588 206.671 383.958 182.63'
-          ></polygon>
-        </svg>
-        <h1 className='text-3xl font-bold'>Page not found</h1>
-        <p>
-          Please double-check the browser address bar or use the navigation to
-          go to a known page.
-        </p>
-        <Link
-          href='/'
-          rel='noopener noreferrer'
-          className='px-8 py-3 font-semibold rounded bg-[#eb6753] text-white'
-        >
-          Back to homepage
-        </Link>
+    <div className='bg-[#f7f7f7] h-screen'>
+      <div className='max-w-7xl px-4 flex items-center justify-center h-full mx-auto'>
+        <div className='space-y-4 flex flex-col text-center '>
+          <h1 className='text-3xl font-bold'>Content not found</h1>
+          <p>
+            Please double-check the browser address bar or use the navigation to
+            go to a known page.
+          </p>
+          <Link
+            href='/'
+            rel='noopener noreferrer'
+            className='px-8 py-3 w-1/2 mx-auto font-semibold rounded bg-[#eb6753] text-white'
+          >
+            Back to home
+          </Link>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }

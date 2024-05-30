@@ -7,7 +7,6 @@ export default function Example() {
 
   const headerMessages = {
     Home: h('Home'),
-
     About: h('About'),
   };
 

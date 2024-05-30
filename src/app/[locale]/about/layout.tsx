@@ -19,7 +19,6 @@ export async function generateMetadata({
   };
 }
 //// CHILDREN ////
-
 export default function LocaleLayout({ children, params: { locale } }: Props) {
   // Enable static rendering
   const messages = useMessages();
