@@ -11,7 +11,7 @@ module.exports = {
   rules: {
     quotes: "off",
     singleQuote: "off",
-    "prettier/prettier": ["error", { endOfLine: "Auto" }],
+    "prettier/prettier": ["error", { endOfLine: "auto" }],
   },
   overrides: [
     {
