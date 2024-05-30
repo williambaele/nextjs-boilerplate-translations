@@ -1,0 +1,37 @@
+{
+  "extends": "eslint-config-molindo/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/Header.jsx",
+    "src/components/HeaderWhite.jsx",
+
+    "src/app/api/prop/route.ts",
+    "src/components/LocaleSwitcher.jsx",
+    "src/app/lib/mongo.ts"
+, "src/app/[locale]/city/athens/page.tsx", "src/app/[locale]/property/[...reference]/page.jsx", "src/app/[locale]/properties-to-rent/page.tsx", "src/app/[locale]/properties-to-buy/page.tsx", "src/app/[locale]/become-an-agent/page.tsx", "src/app/[locale]/properties/page.jsx", "src/app/[locale]/contact/page.tsx", "src/app/[locale]/city/cyclades/page.tsx"  ],
+  "exclude": ["node_modules"]
+}

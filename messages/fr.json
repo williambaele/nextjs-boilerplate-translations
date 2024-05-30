@@ -1,0 +1,30 @@
+{
+  "IndexPage": {
+    "MetaTitle": "Exemple de page d'accueil",
+    "MetaDescription": "Méta-description de l'exemple de page d'accueil",
+    "Title": "Bienvenue sur cet exemple de page d'accueil!",
+    "Description": "Profitez de la puissance de NextJS et de la simplicité de cet exemple de page d'accueil. Vous pouvez facilement créer un site web multilingue avec cet exemple."
+  },
+  "Error": {
+    "title": "Quelque chose a mal tourné!",
+    "description": "Nous avons malheureusement rencontré une erreur. Vous pouvez essayer de recharger la page que vous visitiez."
+  },
+  "NotFoundPage": {
+    "Title": "Page non trouvée",
+    "Description": "Veuillez vérifier l'adresse dans la barre du navigateur ou utilisez la navigation pour aller vers une page connue."
+  },
+  "LocaleSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, fr {Français} en {Anglais} other {Ελληνικά}}"
+  },
+  "Navigation": {
+    "Home": "Accueil",
+    "About": "À propos"
+  },
+  "About": {
+    "MetaTitle": "À propos",
+    "MetaDescription": "Méta-description à propos",
+    "Title": "À propos de nous",
+    "Description": "À propos de cet exemple de page d'accueil"
+  }
+}

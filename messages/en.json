@@ -1,0 +1,30 @@
+{
+  "IndexPage": {
+    "MetaTitle": "Boilerplate EN",
+    "MetaDescription": "Metadescription boilerplate EN",
+    "Title": "Welcome to this boilerplate!",
+    "Description": "Enjoyr the power of NextJS and the simplicity of this boilerplate. You can easily create a multilingual website with this boilerplate."
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "We've unfortunately encountered an error.You can try to reload the page you were visiting"
+  },
+  "NotFoundPage": {
+    "Title": "Page not found",
+    "Description": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {Français} en {English} other {Ελληνικά}}"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About"
+  },
+  "About": {
+    "MetaTitle": "About",
+    "MetaDescription": "Metadescription about EN",
+    "Title": "About us",
+    "Description": "About this boilerplate"
+  }
+}
