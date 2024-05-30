@@ -1,4 +1,4 @@
 {
-    "endOfLine": "auto"
-  }
-  
+  ('endOfLine');
+  ('auto');
+}

@@ -1,7 +1,6 @@
-import { getTranslations } from "next-intl/server";
-import { ReactNode } from "react";
-import { useMessages } from "next-intl";
-
+import { getTranslations } from 'next-intl/server';
+import { ReactNode } from 'react';
+import { useMessages } from 'next-intl';
 
 type Props = {
   children: ReactNode;
@@ -11,12 +10,12 @@ type Props = {
 //// META DATA ////
 export async function generateMetadata({
   params: { locale },
-}: Omit<Props, "children">) {
-  const t = await getTranslations({ locale, namespace: "About" });
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({ locale, namespace: 'About' });
 
   return {
-    title: t("MetaTitle"),
-    description: t("MetaDescription"),
+    title: t('MetaTitle'),
+    description: t('MetaDescription'),
   };
 }
 //// CHILDREN ////

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import clsx from "clsx";
-import { useParams } from "next/navigation";
-import { ChangeEvent, ReactNode, useTransition } from "react";
-import { useRouter, usePathname } from "../navigation";
+import clsx from 'clsx';
+import { useParams } from 'next/navigation';
+import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { useRouter, usePathname } from '../navigation';
 
 type Props = {
   children: ReactNode;
@@ -37,21 +37,21 @@ export default function LocaleSwitcherSelect({
   return (
     <label
       className={clsx(
-        "cursor-pointer font-semibold overflow-hidden relative z-0 lg:border lg:border-gray-900 rounded-lg group py-1",
-        isPending && "transition-opacity [&:disabled]:opacity-30",
+        'cursor-pointer font-semibold overflow-hidden relative z-0 lg:border lg:border-gray-900 rounded-lg group py-1',
+        isPending && 'transition-opacity [&:disabled]:opacity-30',
       )}
     >
-      <p className="sr-only">{label}</p>
+      <p className='sr-only'>{label}</p>
       <select
-        className="relative z-10 text-gray-900 ease-in-out  lg:group-hover:text-white text-sm duration-500 bg-transparent lg:group-hover:bg-gray-900 lg:hover:bg-gray-900 group-hover:bg-transparent w-full cursor-pointer focus:outline-none focus:ring-0 focus:border-transparent outline-none lg:px-4" 
+        className='relative z-10 text-gray-900 ease-in-out  lg:group-hover:text-white text-sm duration-500 bg-transparent lg:group-hover:bg-gray-900 lg:hover:bg-gray-900 group-hover:bg-transparent w-full cursor-pointer focus:outline-none focus:ring-0 focus:border-transparent outline-none lg:px-4'
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {children}
       </select>
-      <span className="hidden lg:block absolute w-full h-full bg-gray-900 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500"></span>
-      <span className="hidden lg:block absolute w-full h-full bg-gray-900 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500"></span>
+      <span className='hidden lg:block absolute w-full h-full bg-gray-900 -left-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:left-0 duration-500'></span>
+      <span className='hidden lg:block absolute w-full h-full bg-gray-900 -right-32 top-0 -rotate-45 group-hover:rotate-0 group-hover:right-0 duration-500'></span>
     </label>
   );
 }

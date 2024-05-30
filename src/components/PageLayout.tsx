@@ -1,9 +1,9 @@
-import {ReactNode} from 'react';
+import { ReactNode } from 'react';
 
 type Props = {
   children?: ReactNode;
 };
 
-export default function PageLayout({children}: Props) {
+export default function PageLayout({ children }: Props) {
   return <div>{children}</div>;
 }
