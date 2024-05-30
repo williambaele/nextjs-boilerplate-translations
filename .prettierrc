@@ -1,10 +1,5 @@
 {
-  "prettier/prettier": [
-    "error",
-    {
-      "singleQuote": true,
-      "jsxSingleQuote ": true,
-      "parser": "flow"
-    }
-  ]
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "parser": "babel"
 }
