@@ -6,13 +6,16 @@
     "Description": "Enjoyr the power of NextJS and the simplicity of this boilerplate. You can easily create a multilingual website with this boilerplate."
   },
   "Error": {
-    "title": "Something went wrong!",
-    "description": "We've unfortunately encountered an error.You can try to reload the page you were visiting"
+    "Title": "Something went wrong!",
+    "Description": "We've unfortunately encountered an error.You can try to reload the page you were visiting",
+    "Button": "Back home"
   },
   "NotFoundPage": {
     "Title": "Page not found",
-    "Description": "Please double-check the browser address bar or use the navigation to go to a known page."
+    "Description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "Button": "Back home"
   },
+
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, fr {Français} en {English} other {Ελληνικά}}"

@@ -13,7 +13,7 @@ export default function Example({ messages }) {
 
   return (
     <header
-      className={`z-40 sticky top-0 h-20 transition-colors ease-in-out duration-300 bg-[#f7f7f7] shadow-lg`}
+      className={`z-40 sticky top-0 h-20 transition-colors ease-in-out duration-300 bg-[#f7f7f7] shadow-md`}
     >
       <nav
         className='flex items-center justify-between h-full px-4 mx-auto max-w-7xl'
